@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+}
+html, 
+body {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #999;
+}
+
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+}
+.footerColumn{
+    text-align: center;
+    background-color: rgb(224, 222, 222);
+    color: black;
+}
+.navbar-brand {
+    text-align: right;
+    text-transform: uppercase;
+    color: rgb(16, 16, 16);
+}
+aside, article {
+    padding: 2em;
+}
+aside {
+    text-align: center;
+}
+
+main {
+    display: block;
+    background-image: url("");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+article{
+    width: 75%;
+}
+
+.columns{
+    display: flex;
+}
+
+
+@media only screen and (min-width: 768px){
+
+    aside {
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .columns-desktop {
+        display: flex;
+    }
+}
+
+.Kaffemaskiner{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #999;
+    border: solid 1px #ccc;
+}
+
+.Kaffemaskiner img{
+    width: 100%;
+}
+
+.Kaffemaskiner .title{
+    font-weight: bold;
+}
+
+.Kaffemaskiner .columns{
+    width: 100%;
+}
+
+.Kaffemaskiner .price {
+    text-align: right;
+}
+
+.Kaffemaskiner .columns div {
+    width: 50%;
+}
+
+.Kaffemaskiner button {
+    background-color: lightyellow;
+    padding: 10px;
+    border: solid 1px lightyellow;
+    border-radius: 3px;
+    color: black;
+}
+
+kaffeparty {
+    padding-right: 15%;
+
+}
+
+.section{
+    
+    background-color: #999;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: 6rem auto 4rem auto;
+}
+.sectionOmOss{
+    background-color: #999;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: 6rem auto 4rem auto;
+}
+
+.sectionOmOss h1{
+    margin: 0;
+    color: black;
+    font-size: 2em;
+}
+
+.sectionOmOss p{
+    margin: 0;
+    display: flex;
+    margin-top: 1em;
+}
+
+
+.section img{
+    height: 200px;
+
+}
+
+.section h1{
+    margin: 0;
+    color: black;
+}
+.section p{
+    color: black;
+    margin-right: 15px;
+}
+.card-columns{
+    @include media-breakpoint-only(1lg){
+        column:count: 2;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin: 3rem auto 3rem auto;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  logga {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+.columnOmOss {
+    float: left;
+    padding: 0 10px;
+    width: 25%
+}
+
+.rowOmOss {
+    margin: 0 -5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .columnOmOss{
+        width: 100%;
+        display: block;
+        margin:auto;
+    }
+}
